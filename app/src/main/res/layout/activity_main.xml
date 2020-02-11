@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2196F3"
+    android:padding="10sp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50sp"
+        android:fontFamily="cursive"
+        android:text="Quiz Me"
+        android:textColor="#EEF5FA"
+        android:textSize="70sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="167dp"
+        tools:layout_editor_absoluteY="359dp" />
+
+    <TextView
+        android:id="@+id/scoreCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/quizButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5sp"
+        android:text="High Score : 0 "
+        android:textSize="30sp"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/quizButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40sp"
+        android:background="#4CAF50"
+        android:shadowColor="#275028"
+        android:text="Start Quiz"
+        android:textColor="#D7E0E7"
+        android:textSize="24sp" />
+
+    <Spinner
+        android:id="@+id/spinner_categ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/quizButton"
+        android:layout_marginTop="25sp"
+        android:layout_marginStart="70sp"/>
+
+    <Spinner
+        android:id="@+id/spinner_diffi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/quizButton"
+        android:layout_toRightOf = "@+id/spinner_categ"
+        android:layout_marginTop="25sp"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
